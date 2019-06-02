@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Ylva Selling Portfolio</title>
+  <!--<link rel="stylesheet" href="styles.css-->
+
+  <!--Bootstrap setup-->
+  <!-- Latest compiled and minified CSS -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  <script type="text/javascript" src="index.js"></script>
+  <!-- Custom CSS styling
+  <style>
+
+  </style> -->
+
+</head>
+
+<body>
+
+<!-- Header -->
+
+  <div class="jumbotron">
+    <div class="container-fluid text-center">
+      <h1>Ylva Selling</h1>
+      <p>Portfolio</p>
+    </div>
+  </div>
+
+<!-- Menu to toggle visibility for projects -->
+
+<div class="container-fluid text-center">
+  <button class="btn btn-default navbar-btn" onclick="showAll()">Allt</button>
+
+  <div>
+      <input id="Programmering" type="checkbox" class="category"  onclick="toggleVisibility('Programmering')" checked="checked">Programmering</input>
+
+      <input id="3D-datorgrafik" type="checkbox" class="category" onclick="toggleVisibility('3D-datorgrafik')" checked="checked">3D-grafik</input>
+
+      <input id="Spel" type="checkbox" class="category" onclick="toggleVisibility('Spel')" checked="checked">Spel</input>
+
+      <input id="Design" type="checkbox" class="category" onclick="toggleVisibility('Design')" checked="checked">Design</input>
+
+  </div>
+</div>
+
+<!-- Project cards -->
+<div class="container-fluid bg-3 text-center">
+  <div class="row">
+    <div class="col-*-*"></div>
+    <div class="col-*-*"></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4 3D-datorgrafik collapse in card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/0/07/Cubic_Structure_with_Shallow_Depth_of_Field.jpg" class="img-responsive" style="width:100%" alt="Image">
+    </div>
+    <div class="col-sm-4 Programmering 3D-datorgrafik collapse in card">
+        <img src="https://liu.se/-/media/0-2018/02/tekfak-programbild-civilingenjor-medieteknik-jan2018.jpg?h=371&la=sv-SE&mw=639&w=639&hash=AE8892A0ACB19F907D2A079FC520FD9F20F52FE8" class="img-responsive" style="width:100%" alt="Image">
+    </div>
+    <div class="col-sm-4 Programmering collapse in card">
+        <img src="https://gratisiskolan.se/pub/media/nwt/blog/item/image/g/r/gris_programmering746x453.jpg" class="img-responsive" style="width:100%" alt="Image">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4 3D-datorgrafik collapse in card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/0/07/Cubic_Structure_with_Shallow_Depth_of_Field.jpg" class="img-responsive" style="width:100%" alt="Image">
+    </div>
+    <div class="col-sm-4 Programmering 3D-datorgrafik collapse in card">
+        <img src="https://liu.se/-/media/0-2018/02/tekfak-programbild-civilingenjor-medieteknik-jan2018.jpg?h=371&la=sv-SE&mw=639&w=639&hash=AE8892A0ACB19F907D2A079FC520FD9F20F52FE8" class="img-responsive" style="width:100%" alt="Image">
+    </div>
+    <div class="col-sm-4 Programmering collapse in card">
+        <img src="https://gratisiskolan.se/pub/media/nwt/blog/item/image/g/r/gris_programmering746x453.jpg" class="img-responsive" style="width:100%" alt="Image">
+    </div>
+  </div>
+
+
+
+</div>
+
+</body>
+</html>
