@@ -1,21 +1,27 @@
 "use strict";
 
+$(function() {
+    $('.category').change(toggleVisibility);
+})
+
 function showAll() {
 
   $('.card').show();
-  var categories = $('.category');
+  let categories = $('.category');
+  let labels = $('label');
 
   //Make all buttons unpressed
-  for (var i = 0; i < categories.length; i++) {
+  for (let i = 0; i < categories.length; i++) {
     if(!categories[i].checked)
     {
+      $(labels[i]).button('toggle');
       categories[i].checked = true;
     }
   }
 }
 
 
-function toggleVisibility(className) {
+function toggleVisibility() {
 
   let allCategories = $('.category');
   let projects = $('.card');
