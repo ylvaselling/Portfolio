@@ -1,67 +1,84 @@
 "use strict";
+var portfolioData;
 
-// Retrieving data:
-
+// Retrieving data from json file:
 function loadDoc() {
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
-      var portfolioData = JSON.parse(this.responseText);
+      portfolioData = JSON.parse(this.responseText);
       appendData(portfolioData);
-      console.log(portfolioData);
     }
   };
   xhttp.open("GET", "data.json", true);
   xhttp.send();
 }
 
+//Listening to checkboxes with categories
 $(function() {
-    $('.category').change(toggleVisibility);
+    $('.category').change(function() {appendData(portfolioData)});
 })
 
+//Write out the data
 function appendData(data) {
-  var mainContainer = document.getElementById("myData");
+
+  let mainContainer = document.getElementById("projectCards");
+  $(mainContainer).empty();
+  let allCategories = $('.category');
+  let checkedCategories = [];
+  let cardsToDisplay = [];
+
+  //Get all checked categories
+  for (let j = 0; j < allCategories.length; j++) {
+    if (allCategories[j].checked) {
+      checkedCategories.push(allCategories[j].id);
+    }
+  }
+  //Get all projects to display
   for (var i = 0; i < data.length; i++) {
-    var div = document.createElement("div");
-    div.innerHTML = 'id: ' + data [i].id + ' Name: ' + data[i].firstName + ' ' + data[i].lastName;
-    mainContainer.appendChild(div);
+    for(var k = 0; k < checkedCategories.length; k++) {
+        if(data[i].class.includes(checkedCategories[k])) {
+          cardsToDisplay.push(data[i]);
+          break;
+        }
+    }
+  }
+  //Display all projects
+  for(let l = 0; l < cardsToDisplay.length; l++){
+    //Create a row
+    if(l % 3 === 0){
+      var rowDiv = document.createElement("div");
+      rowDiv.classList.add("row");
+      mainContainer.appendChild(rowDiv);
+    }
+    //Create div for image
+    var imageDiv = document.createElement("div");
+    imageDiv.classList.add("col-sm-4");
+
+    //Create image
+    var myImage = document.createElement("IMG");
+    myImage.src = cardsToDisplay[l].imageUrl;
+    myImage.setAttribute('width', '100%');
+    myImage.classList.add("img-responsive");
+
+    //Append to DOM
+    imageDiv.appendChild(myImage);
+    rowDiv.appendChild(imageDiv);
   }
 }
 
+//Display all data
 function showAll() {
 
-  $('.card').show();
   let categories = $('.category');
   let labels = $('label');
 
-  //Make all buttons unpressed
+  //Make all buttons pressed
   for (let i = 0; i < categories.length; i++) {
     if(!categories[i].checked)
     {
       $(labels[i]).button('toggle');
       categories[i].checked = true;
-    }
-  }
-}
-
-
-function toggleVisibility() {
-
-  let allCategories = $('.category');
-  let projects = $('.card');
-
-  for (let i = 0; i < projects.length; ++i) {
-
-    for (let j = 0; j < allCategories.length; j++) {
-
-      if (projects[i].classList.contains(allCategories[j].id) &&
-          allCategories[j].checked) {
-          $(projects[i]).show();
-          break;
-      }
-      else {
-          $(projects[i]).hide();
-      }
     }
   }
 }

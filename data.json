@@ -2,17 +2,55 @@
   {
     "id": "1",
     "firstName": "John",
-    "lastName": "Doe"
+    "lastName": "Doe",
+    "class": ["3D-datorgrafik"],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/0/07/Cubic_Structure_with_Shallow_Depth_of_Field.jpg"
   },
   {
     "id": "2",
     "firstName": "Ylva",
-    "lastName": "Selling"
+    "lastName": "Selling",
+    "class": ["Programmering", "3D-datorgrafik"],
+    "imageUrl": "https://liu.se/-/media/0-2018/02/tekfak-programbild-civilingenjor-medieteknik-jan2018.jpg?h=371&la=sv-SE&mw=639&w=639&hash=AE8892A0ACB19F907D2A079FC520FD9F20F52FE8"
   },
   {
     "id": "3",
     "firstName": "Pippi",
-    "lastName": "Långstrump"
+    "lastName": "Långstrump",
+    "class": ["Programmering"],
+    "imageUrl": "https://gratisiskolan.se/pub/media/nwt/blog/item/image/g/r/gris_programmering746x453.jpg"
+  },
+  {
+    "id": "4",
+    "firstName": "John",
+    "lastName": "Doe",
+    "class": ["Programmering"],
+    "imageUrl": "https://hackr.io/blog/wp-content/uploads/2018/10/what-is-a-programming-language@2x-1280x800.png"
+  },
+  {
+    "id": "5",
+    "firstName": "Ylva",
+    "lastName": "Selling",
+    "class": ["Programmering"],
+    "imageUrl": "https://www.elegantthemes.com/blog/wp-content/uploads/2017/07/programming-languages-to-learn-for-wordpress-featured-image.png"
+  },
+  {
+    "id": "6",
+    "firstName": "Pippi",
+    "lastName": "Långstrump",
+    "class": ["Design"],
+    "imageUrl": "https://www.scalevp.com/sites/default/files/designbig.jpg"
+  },
+  {
+    "id": "6",
+    "firstName": "Pippi",
+    "lastName": "Långstrump",
+    "class": ["Spel"],
+    "imageUrl": "https://blogs-images.forbes.com/erikkain/files/2018/06/No-Mans-Sky.jpg"
   }
+
+
+
+
 
 ]
