@@ -64,3 +64,8 @@ h3 a {
 .btn-toolbar{
   text-align: center;
 }​
+
+.col-md-4 {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
