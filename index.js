@@ -53,7 +53,7 @@ function appendData(data) {
     }
     //Create div for image
     var imageDiv = document.createElement("div");
-    imageDiv.classList.add("col-sm-4");
+    imageDiv.classList.add("col-md-4");
 
     //Create image
     var myImage = document.createElement("IMG");
