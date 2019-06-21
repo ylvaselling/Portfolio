@@ -1,3 +1,32 @@
+/*Defining color scheme*/
+
+:root {
+    --accent-color:#e76079;
+    --light-green:#d8f1ec;
+    --dark-green:#7fc6b6;
+}
+
+
+/*Small screens*/
+@media screen and (max-width: 600px) {
+  h1.display-1 {
+    font-size: 50px;
+  }
+  h3 {
+    font-size: 20px;
+  }
+}
+
+/*Medium to large screens*/
+@media screen and (min-width: 601px) {
+  h1.display-1 {
+    font-size: 80px;
+  }
+  h3. {
+    font-size: 30;
+  }
+}
+
 body {
   background-color: white;
 }
@@ -7,26 +36,36 @@ h1 {
   text-align: center;
 }
 
-p {
-  font-family: verdana;
-  font-size: 20px;
+h1 a {
+  color: var(--accent-color);
+}
+
+h3 a {
+  color: darkgray;
+
 }
 
 #header {
   color: white;
-  background-color: turquoise;
+  background-color: var(--light-green);
   height: 50%;
+  margin-bottom: 3rem;
 }
 
 #showAllButton {
-  padding-right: 10px;
-  padding-left: 10px;
+  padding-right: 2vw;
+  padding-left: 2vw;
+  background-color: var(--accent-color);
 }
 
 #button_toolbar {
-  padding-bottom: 10px;
+  margin-bottom: 2vw;
 }
 
 .btn-toolbar{
   text-align: center;
 }​
+
+label button .btn.btn-info, .btn-lg, .active {
+  background-color: var(--accent-color);
+}
