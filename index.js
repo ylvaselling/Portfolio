@@ -60,9 +60,14 @@ function appendData(data) {
     myImage.src = cardsToDisplay[l].imageUrl;
     myImage.setAttribute('width', '100%');
     myImage.classList.add("img-responsive");
+    //Make image clickable
+    var linkElement = document.createElement('a');
+    linkElement.href = cardsToDisplay[l].projectPage;
+
+    linkElement.appendChild(myImage);
 
     //Append to DOM
-    imageDiv.appendChild(myImage);
+    imageDiv.appendChild(linkElement);
     rowDiv.appendChild(imageDiv);
   }
 }
