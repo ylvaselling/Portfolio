@@ -10,7 +10,7 @@ function loadDoc() {
       appendData(portfolioData);
     }
   };
-  xhttp.open("GET", "data.json", true);
+  xhttp.open("GET", "/data.json", true);
   xhttp.send();
 }
 
