@@ -7,83 +7,105 @@ function loadDoc() {
   xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
       portfolioData = JSON.parse(this.responseText);
-      appendData(portfolioData);
+      appendData('all');
     }
   };
   xhttp.open("GET", "/data.json", true);
   xhttp.send();
 }
 
-//Listening to checkboxes with categories
-$(function() {
-    $('.category').change(function() {appendData(portfolioData)});
-})
+function getData() {
+  return portfolioData;
+}
+
+function displayProject(id) {
+  let portfolioData = getData();
+  let mainContainer = document.getElementById("main");
+  $(mainContainer).empty();
+
+  //Create backwards arrow
+  var button = document.createElement('BUTTON');
+  var text = document.createTextNode("<- Back");
+  button.appendChild(text);
+  button.addEventListener("click", function() {
+    appendData("all");
+  });
+  mainContainer.appendChild(button);
+
+  //Create image
+  var imageDiv = document.createElement("div");
+  var myImage = document.createElement("IMG");
+  myImage.src = portfolioData[id].imageUrl;
+  myImage.classList.add("projectPageImage");
+  imageDiv.classList.add("projectPageImageDiv");
+  imageDiv.appendChild(myImage);
+
+  //Create title
+  var titletext = document.createTextNode(portfolioData[id].firstName);
+  var title = document.createElement('h1');
+  title.appendChild(titletext);
+
+  //Create text below title
+  var descriptiontext = document.createTextNode(portfolioData[id].lastName);
+  var description = document.createElement('h3');
+  description.appendChild(descriptiontext);
+
+  //Create text about project
+  var text = document.createTextNode(portfolioData[id].lastName);
+  var contenttext = document.createElement('p');
+  contenttext.appendChild(text);
+
+  mainContainer.appendChild(imageDiv);
+  mainContainer.appendChild(title);
+  mainContainer.appendChild(description);
+  mainContainer.appendChild(contenttext);
+}
 
 //Write out the data
-function appendData(data) {
+function appendData(category) {
 
-  let mainContainer = document.getElementById("projectCards");
+  let portfolioData = getData();
+  let mainContainer = document.getElementById("main");
   $(mainContainer).empty();
-  let allCategories = $('.category');
-  let checkedCategories = [];
   let cardsToDisplay = [];
+  var projectCards = document.createElement("div");
+  projectCards.id = "projectCards";
+  mainContainer.appendChild(projectCards);
 
-  //Get all checked categories
-  for (let j = 0; j < allCategories.length; j++) {
-    if (allCategories[j].checked) {
-      checkedCategories.push(allCategories[j].id);
-    }
-  }
   //Get all projects to display
-  for (var i = 0; i < data.length; i++) {
-    for(var k = 0; k < checkedCategories.length; k++) {
-        if(data[i].class.includes(checkedCategories[k])) {
-          cardsToDisplay.push(data[i]);
-          break;
-        }
+  //0 & 1 is reserved for about and contact info
+  for (var i = 2; i < portfolioData.length; i++) {
+    if(portfolioData[i].class.includes(category) ||
+      category == "all") {
+      cardsToDisplay.push(portfolioData[i]);
     }
   }
   //Display all projects
   for(let l = 0; l < cardsToDisplay.length; l++){
-    //Create a row
-    if(l % 3 === 0){
-      var rowDiv = document.createElement("div");
-      rowDiv.classList.add("row");
-      mainContainer.appendChild(rowDiv);
-    }
+
     //Create div for image
-    var imageDiv = document.createElement("div");
-    imageDiv.classList.add("col-md-4");
+    var cardDiv = document.createElement("div");
+    cardDiv.classList.add("projectCard");
 
     //Create image
     var myImage = document.createElement("IMG");
     myImage.src = cardsToDisplay[l].imageUrl;
-    myImage.setAttribute('width', '100%');
-    myImage.classList.add("img-responsive");
-    //Make image clickable
-    var linkElement = document.createElement('a');
-    linkElement.href = cardsToDisplay[l].projectPage;
+    myImage.classList.add("projectImage");
 
-    linkElement.appendChild(myImage);
+    //Create title
+    var textDiv = document.createElement("div");
+    textDiv.classList.add("textDiv");
+    var text = document.createTextNode(cardsToDisplay[l].firstName);
+    var title = document.createElement('h3');
+    title.appendChild(text);
+    textDiv.appendChild(title);
 
     //Append to DOM
-    imageDiv.appendChild(linkElement);
-    rowDiv.appendChild(imageDiv);
-  }
-}
-
-//Display all data
-function showAll() {
-
-  let categories = $('.category');
-  let labels = $('label');
-
-  //Make all buttons pressed
-  for (let i = 0; i < categories.length; i++) {
-    if(!categories[i].checked)
-    {
-      $(labels[i]).button('toggle');
-      categories[i].checked = true;
-    }
+    cardDiv.appendChild(myImage);
+    cardDiv.appendChild(textDiv);
+    cardDiv.addEventListener("click", function() {
+      displayProject(cardsToDisplay[l].id);
+    });
+    projectCards.appendChild(cardDiv);
   }
 }

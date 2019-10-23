@@ -1,19 +1,161 @@
+
+/*Small screens*/
+@media screen and (max-width: 600px) {
+  h1.display-1 {
+    font-size: 50px;
+  }
+  h3 {
+    font-size: 20px;
+  }
+}
+
+/*Medium to large screens*/
+@media screen and (min-width: 601px) {
+  h1.display-1 {
+    font-size: 80px;
+  }
+  h3. {
+    font-size: 30;
+  }
+}
+
 body {
-  background-color: lightblue;
+  background-color: white;
+  font-family: 'Montserrat', sans-serif;
 }
 
 h1 {
-  color: white;
-  text-align: center;
+  color: black;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  text-decoration: line-through;
 }
 
 p {
-  font-family: verdana;
-  font-size: 20px;
+  font-size: 16px;
 }
 
-header {
+ul {
+  list-style-type: none;
+}
+
+button {
+  background-color: inherit;
+  border: none;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 5px;
+  font-family: inherit;
+}
+
+button:hover {
+  text-decoration: line-through;
+  cursor: pointer;
+}
+#title {
+  font-size: 28px;
+}
+
+#menu {
+  margin-top: 50px;
+}
+
+#portfolio {
+  font-size: 18px;
+  font-family: inherit;
+}
+
+#sidebar {
+  color: black;
+  background-color: white;
+  height: 100%;
+  margin-bottom: 3rem;
+  width: 20vw;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+#main {
+  margin-left: 20vw; /* Same as the width of the sidenav */
+}
+
+#projectCards {
+  display: inline-grid;
+  grid-gap: 5px;
+  grid-template-columns: 33% 33% 33%;
+}
+
+.link:hover {
+  cursor: pointer;
+  text-decoration: line-through;
+}
+
+.projectCard {
+  width: 25vw;
+  height: 25vw;
+  text-align: left;
   color: white;
-  background-color: pink;
-  height: 50%;
+  position: relative;
+  animation: slide-up .5s ease-in-out;
+}
+
+@keyframes slide-up {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.projectCard:hover {
+  cursor: pointer;
+}
+
+.projectImage {
+  height: 25vw;
+  width: 25vw;
+  object-fit: cover;
+}
+
+.projectPageImage {
+  width: 95%;
+  margin-top: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.projectPageImageDiv {
+  width: 100%;
+}
+
+.textDiv {
+  bottom: 0px;
+  background-color: black;
+  color: white;
+  opacity: 0.0;
+  transition: .5s ease;
+  width: inherit;
+  position: absolute;
+  top: 70%;
+}
+
+.projectCard:hover .textDiv {
+  opacity: 0.5;
+}
+
+.textDiv h3 {
+  padding: 10px;
 }

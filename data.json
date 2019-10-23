@@ -1,9 +1,17 @@
 [
   {
+    "id": "0",
+    "firstName": "About me",
+    "lastName": "I am an engineering student",
+    "class": [],
+    "imageUrl": "https://static.techspot.com/images2/news/bigimage/2018/09/2018-09-07-image-17.jpg",
+    "projectPage": "projects/project.html"
+  },
+  {
     "id": "1",
-    "firstName": "John",
-    "lastName": "Doe",
-    "class": ["3D-datorgrafik"],
+    "firstName": "Contact me!",
+    "lastName": "You can reach me ...",
+    "class": [],
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/0/07/Cubic_Structure_with_Shallow_Depth_of_Field.jpg",
     "projectPage": "projects/project.html"
   },
@@ -28,7 +36,7 @@
     "firstName": "John",
     "lastName": "Doe",
     "class": ["Programmering"],
-    "imageUrl": "https://hackr.io/blog/wp-content/uploads/2018/10/what-is-a-programming-language@2x-1280x800.png",
+    "imageUrl": "https://cdn-images-1.medium.com/max/2600/1*jMDG7pTIaVeP5bQnE1RuXg.png",
     "projectPage": "projects/project.html"
   },
   {
@@ -48,16 +56,52 @@
     "projectPage": "projects/project.html"
   },
   {
-    "id": "6",
+    "id": "7",
+    "firstName": "Ylva",
+    "lastName": "Selling",
+    "class": ["Programmering"],
+    "imageUrl": "http://s3-eu-west-1.amazonaws.com/de-blog/uploads/2017/04/game-designer-how-to-developereconomics-660x458.png",
+    "projectPage": "projects/project.html"
+  },
+  {
+    "id": "8",
+    "firstName": "Pippi",
+    "lastName": "Långstrump",
+    "class": ["Design"],
+    "imageUrl": "https://i.udemycdn.com/course/750x422/271112_46db_7.jpg",
+    "projectPage": "projects/project.html"
+  },
+  {
+    "id": "9",
     "firstName": "Pippi",
     "lastName": "Långstrump",
     "class": ["Spel"],
-    "imageUrl": "https://blogs-images.forbes.com/erikkain/files/2018/06/No-Mans-Sky.jpg",
+    "imageUrl": "https://www.seamedu.com/wp-content/uploads/2019/07/game_designvsgame_development02.jpg",
+    "projectPage": "projects/project.html"
+  },
+  {
+    "id": "10",
+    "firstName": "Ylva",
+    "lastName": "Selling",
+    "class": ["Programmering"],
+    "imageUrl": "http://traininginchennai.in/3d-animation-training-images/game-design.jpg",
+    "projectPage": "projects/project.html"
+  },
+  {
+    "id": "11",
+    "firstName": "Pippi",
+    "lastName": "Långstrump",
+    "class": ["Design"],
+    "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRtAYUZ8XgEwdtO0SGFZJnRNXLLkUZ7KVGOBoIGRgJbYVgHhlSv",
+    "projectPage": "projects/project.html"
+  },
+  {
+    "id": "12",
+    "firstName": "Pippi",
+    "lastName": "Långstrump",
+    "class": ["Spel"],
+    "imageUrl": "https://www.hull.ac.uk/editor-assets/images/digital-media/ryan-connor-ba-game-and-entertainment-design.x1a038ec2.jpg",
     "projectPage": "projects/project.html"
   }
-
-
-
-
 
 ]
