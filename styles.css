@@ -43,7 +43,7 @@
     bottom: 0px;
     background-color: black;
     color: white;
-    opacity: 0.5;
+    opacity: 0.8;
     transition: .5s ease;
     width: inherit;
     position: absolute;
@@ -101,6 +101,9 @@
 
 /*Medium to large screens*/
 @media screen and (min-width: 601px) {
+  .projectDiv {
+    margin-right: 1vw;
+  }
   a {
     text-decoration: none;
   }
@@ -115,7 +118,7 @@
   }
   #projectCards {
     display: inline-grid;
-    grid-gap: 5px;
+    grid-row-gap: 1vw;
     grid-template-columns: 33% 33% 33%;
   }
   .projectCard {
@@ -142,10 +145,14 @@
     top: 70%;
   }
   .projectCard:hover .textDiv {
-    opacity: 0.5;
+    opacity: 0.8;
   }
   .projectPageImageDiv {
     width: 100%;
+  }
+  .backBtn {
+    padding-top: 1vw;
+    padding-bottom: 1vw;
   }
   #sidebar {
     color: black;
@@ -205,6 +212,8 @@
     font-size: 1.5vw;
   }
 }
+
+
 ul {
   padding-left: 3vw;
   list-style-type: none;
@@ -224,6 +233,9 @@ a {
   margin-bottom: 0.25vw;
   margin-top: 0vw;
 
+}
+#projectCards {
+  width: 100%;
 }
 button {
   background-color: inherit;

@@ -29,6 +29,7 @@ function displayProject(id) {
 
   //Create backwards arrow
   var button = document.createElement('BUTTON');
+  button.classList.add("backBtn");
   var text = document.createTextNode("<- Back");
   button.appendChild(text);
   button.addEventListener("click", function() {
@@ -45,17 +46,17 @@ function displayProject(id) {
   imageDiv.appendChild(myImage);
 
   //Create title
-  var titletext = document.createTextNode(portfolioData[id].firstName);
+  var titletext = document.createTextNode(portfolioData[id].title);
   var title = document.createElement('h1');
   title.appendChild(titletext);
 
   //Create text below title
-  var descriptiontext = document.createTextNode(portfolioData[id].lastName);
+  var descriptiontext = document.createTextNode(portfolioData[id].description);
   var description = document.createElement('h3');
   description.appendChild(descriptiontext);
 
   //Create text about project
-  var text = document.createTextNode(portfolioData[id].lastName);
+  var text = document.createTextNode(portfolioData[id].text);
   var contenttext = document.createElement('p');
   contenttext.appendChild(text);
 
@@ -86,7 +87,6 @@ function appendData(category) {
   }
   //Display all projects
   for(let l = 0; l < cardsToDisplay.length; l++){
-
     //Create div for image
     var cardDiv = document.createElement("div");
     cardDiv.classList.add("projectCard");
@@ -99,7 +99,7 @@ function appendData(category) {
     //Create title
     var textDiv = document.createElement("div");
     textDiv.classList.add("textDiv");
-    var text = document.createTextNode(cardsToDisplay[l].firstName);
+    var text = document.createTextNode(cardsToDisplay[l].title);
     var title = document.createElement('h1');
     title.appendChild(text);
     textDiv.appendChild(title);
