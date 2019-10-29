@@ -18,6 +18,9 @@
   <!-- Google fonts -->
  <link href="https://fonts.googleapis.com/css?family=Montserrat:200i&display=swap" rel="stylesheet">
 
+ <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 
 </head>
 
@@ -26,6 +29,7 @@
 <div id="page">
 
 <div id="sidebar">
+  <div id="titlediv">
     <ul>
       <li>
         <h1 id="title">Ylva Selling</h1>
@@ -34,36 +38,39 @@
         <h3 id="portfolio">Portfolio</h3>
       </li>
     </ul>
-    <ul id="menu">
-      <li>
-            <!-- Menu to toggle visibility for projects -->
-        <h3>Categories</h3>
+  </div>
+    <div id="dropdown">
+      <button class="dropbtn" onclick=toggleMenu()><i class="fa fa-bars"></i></button>
+      <div id="dropdown-content">
+        <ul>
           <li>
-            <button onclick="appendData('all')">All</button>
+            <h3 class="link" onclick="displayProject('0'); toggleMenu()">About</button>
           </li>
           <li>
-            <button id="Programmering" class="category" onclick="appendData('Programmering')">Programming</button>
+            <button onclick="appendData('all'); toggleMenu()"><h3 id="projectBtn">Projects</h3></button>
           </li>
           <li>
-            <button id="3D-datorgrafik" class="category" onclick="appendData('3D-graphics')">3D-graphics</button>
+              <!-- Menu to toggle visibility for projects -->
+              <li>
+                <button id="Programmering" class="category" onclick="appendData('Programmering'); toggleMenu()">Programming</button>
+              </li>
+              <li>
+                <button id="3D-datorgrafik" class="category" onclick="appendData('3D-graphics'); toggleMenu()">3D-graphics</button>
+              </li>
+              <li>
+                <button id="Spel" class="category" onclick="appendData('Games'); toggleMenu()">Games</button>
+              </li>
+              <li>
+                <button id="Design" class="category" onclick="appendData('Design'); toggleMenu()">Design</button>
+              </li>
           </li>
           <li>
-            <button id="Spel" class="category" onclick="appendData('Games')">Games</button>
+            <h3 class="link" onclick="displayProject('1'); toggleMenu()">Contact</button>
           </li>
-          <li>
-            <button id="Design" class="category" onclick="appendData('Design')">Design</button>
-          </li>
-      </li>
-      <li>
-        <h3 class="link" onclick="displayProject('0')">About</button>
-      </li>
-      <li>
-        <h3 class="link" onclick="displayProject('1')">Contact</button>
-      </li>
-    </ul>
 
-
-
+        </ul>
+      </div>
+    </div>
 </div>
 <!-- Display Area-->
 <div id="main">

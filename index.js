@@ -22,6 +22,10 @@ function displayProject(id) {
   let portfolioData = getData();
   let mainContainer = document.getElementById("main");
   $(mainContainer).empty();
+  //Create div for project content
+  var projectDiv = document.createElement("div");
+  projectDiv.classList.add("projectDiv");
+  mainContainer.appendChild(projectDiv);
 
   //Create backwards arrow
   var button = document.createElement('BUTTON');
@@ -30,7 +34,7 @@ function displayProject(id) {
   button.addEventListener("click", function() {
     appendData("all");
   });
-  mainContainer.appendChild(button);
+  projectDiv.appendChild(button);
 
   //Create image
   var imageDiv = document.createElement("div");
@@ -55,10 +59,10 @@ function displayProject(id) {
   var contenttext = document.createElement('p');
   contenttext.appendChild(text);
 
-  mainContainer.appendChild(imageDiv);
-  mainContainer.appendChild(title);
-  mainContainer.appendChild(description);
-  mainContainer.appendChild(contenttext);
+  projectDiv.appendChild(imageDiv);
+  projectDiv.appendChild(title);
+  projectDiv.appendChild(description);
+  projectDiv.appendChild(contenttext);
 }
 
 //Write out the data
@@ -96,7 +100,7 @@ function appendData(category) {
     var textDiv = document.createElement("div");
     textDiv.classList.add("textDiv");
     var text = document.createTextNode(cardsToDisplay[l].firstName);
-    var title = document.createElement('h3');
+    var title = document.createElement('h1');
     title.appendChild(text);
     textDiv.appendChild(title);
 
@@ -107,5 +111,18 @@ function appendData(category) {
       displayProject(cardsToDisplay[l].id);
     });
     projectCards.appendChild(cardDiv);
+  }
+}
+
+/* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+function toggleMenu() {
+//If the screen is small
+  if(window.screen.width < 601) {
+    var x = document.getElementById("dropdown-content");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
   }
 }

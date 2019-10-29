@@ -1,24 +1,214 @@
 
 /*Small screens*/
 @media screen and (max-width: 600px) {
-  h1.display-1 {
-    font-size: 50px;
+
+  button:hover, button:active  {
+    text-decoration: line-through;
+  }
+  a:onclick {
+    text-decoration: line-through;
+  }
+  #dropdown-content {
+    display: none;
+  }
+  .dropbtn {
+    width: 10vw;
+    height:10vw;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    margin-top: 20px;
+    margin-right: 20px;
+  }
+  #projectCards {
+    display: inline-grid;
+    grid-gap: 5px;
+    grid-template-columns: 100%;
+  }
+  .projectCard {
+    width: 95vw;
+    height: 95vw;
+    text-align: left;
+    color: white;
+    position: relative;
+    animation: slide-up .5s ease-in-out;
+  }
+  .projectImage {
+    height: 95vw;
+    width: 95vw;
+    object-fit: cover;
+  }
+  .textDiv {
+    bottom: 0px;
+    background-color: black;
+    color: white;
+    opacity: 0.5;
+    transition: .5s ease;
+    width: inherit;
+    position: absolute;
+    top: 70%;
+  }
+  #sidebar {
+    color: black;
+    background-color: white;
+    margin-bottom: 0px;
+    width: 100vw;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    padding-top: 0px;
+  }
+  #main {
+    margin-top: 25vw;
+    margin-left: 0vw; /* Same as the height of the sidenav */
+  }
+  .projectDiv {
+    margin-top: 5vw;
+  }
+  h1 {
+    margin-top: 3vw;
+    margin-bottom: 3vw;
   }
   h3 {
-    font-size: 20px;
+    margin-top: 3vw;
+    margin-bottom: 3vw;
   }
+  .category {
+    margin: 1vw;
+  }
+  #portfolio {
+    margin-top: 0px;
+    margin-bottom: 2vw;
+  }
+  /*Font sizes, responsive*/
+  h1 {
+    font-size: 7vw;
+  }
+  h3 {
+    font-size: 5vw;
+  }
+  p {
+    font-size: 5vw;
+  }
+  button {
+    font-size: 5vw;
+  }
+
 }
 
 /*Medium to large screens*/
 @media screen and (min-width: 601px) {
-  h1.display-1 {
-    font-size: 80px;
+  a {
+    text-decoration: none;
   }
-  h3. {
-    font-size: 30;
+  button {
+    text-decoration: none;
+  }
+  .dropbtn {
+    display: none;
+  }
+  #dropdown-content {
+    display: block;
+  }
+  #projectCards {
+    display: inline-grid;
+    grid-gap: 5px;
+    grid-template-columns: 33% 33% 33%;
+  }
+  .projectCard {
+    width: 25vw;
+    height: 25vw;
+    text-align: left;
+    color: white;
+    position: relative;
+    animation: slide-up .5s ease-in-out;
+  }
+  .projectImage {
+    height: 25vw;
+    width: 25vw;
+    object-fit: cover;
+  }
+  .textDiv {
+    bottom: 0px;
+    background-color: black;
+    color: white;
+    opacity: 0.0;
+    transition: .5s ease;
+    width: inherit;
+    position: absolute;
+    top: 70%;
+  }
+  .projectCard:hover .textDiv {
+    opacity: 0.5;
+  }
+  .projectPageImageDiv {
+    width: 100%;
+  }
+  #sidebar {
+    color: black;
+    background-color: white;
+    height: 100%;
+    margin-bottom: 3rem;
+    width: 20vw;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+  #main {
+    margin-left: 20vw; /* Same as the width of the sidenav */
+  }
+  button:hover {
+    text-decoration: line-through;
+    cursor: pointer;
+  }
+  a:hover {
+    text-decoration: line-through;
+  }
+  h1 {
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+  }
+  h3 {
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+  }
+  .category {
+    margin: 0.25vw;
+  }
+  #portfolio {
+    margin-top: 0px;
+    margin-bottom: 3vw;
+  }
+  /*Font sizes, responsive*/
+  #title {
+    font-size: 2.5vw;
+  }
+  #portfolio {
+    font-size: 1.5vw;
+  }
+  h1 {
+    font-size: 3vw;
+  }
+  .textDiv h1 {
+    font-size: 1.75vw;
+  }
+  h3, p {
+    font-size: 1.75vw;
+  }
+  button {
+    font-size: 1.5vw;
   }
 }
-
+ul {
+  padding-left: 3vw;
+  list-style-type: none;
+}
 body {
   background-color: white;
   font-family: 'Montserrat', sans-serif;
@@ -27,88 +217,48 @@ body {
 h1 {
   color: black;
 }
-
 a {
-  text-decoration: none;
   color: black;
 }
+#projectBtn {
+  margin-bottom: 0.25vw;
+  margin-top: 0vw;
 
-a:hover {
-  text-decoration: line-through;
 }
-
-p {
-  font-size: 16px;
-}
-
-ul {
-  list-style-type: none;
-}
-
 button {
   background-color: inherit;
   border: none;
-  text-decoration: none;
-  font-size: 16px;
-  padding: 5px;
+  padding: 0px;
   font-family: inherit;
 }
-
-button:hover {
-  text-decoration: line-through;
-  cursor: pointer;
-}
-#title {
-  font-size: 28px;
-}
-
 #menu {
   margin-top: 50px;
 }
-
 #portfolio {
-  font-size: 18px;
   font-family: inherit;
+  color: grey;
 }
-
-#sidebar {
-  color: black;
-  background-color: white;
-  height: 100%;
-  margin-bottom: 3rem;
-  width: 20vw;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  overflow-x: hidden;
-  padding-top: 20px;
+#title {
+  margin-bottom: 0px;
 }
-
-#main {
-  margin-left: 20vw; /* Same as the width of the sidenav */
-}
-
-#projectCards {
-  display: inline-grid;
-  grid-gap: 5px;
-  grid-template-columns: 33% 33% 33%;
-}
-
 .link:hover {
   cursor: pointer;
   text-decoration: line-through;
 }
 
-.projectCard {
-  width: 25vw;
-  height: 25vw;
-  text-align: left;
-  color: white;
-  position: relative;
-  animation: slide-up .5s ease-in-out;
+.projectCard:hover {
+  cursor: pointer;
 }
-
+.projectPageImage {
+  width:100%;
+}
+.projectPageImageDiv {
+  width: 100%;
+}
+.textDiv h1 {
+  padding: 10px;
+  color: white;
+}
 @keyframes slide-up {
     0% {
         opacity: 0;
@@ -118,44 +268,4 @@ button:hover {
         opacity: 1;
         transform: translateY(0);
     }
-}
-
-.projectCard:hover {
-  cursor: pointer;
-}
-
-.projectImage {
-  height: 25vw;
-  width: 25vw;
-  object-fit: cover;
-}
-
-.projectPageImage {
-  width: 95%;
-  margin-top: 10px;
-  margin-right: 10px;
-  margin-bottom: 10px;
-}
-
-.projectPageImageDiv {
-  width: 100%;
-}
-
-.textDiv {
-  bottom: 0px;
-  background-color: black;
-  color: white;
-  opacity: 0.0;
-  transition: .5s ease;
-  width: inherit;
-  position: absolute;
-  top: 70%;
-}
-
-.projectCard:hover .textDiv {
-  opacity: 0.5;
-}
-
-.textDiv h3 {
-  padding: 10px;
 }
