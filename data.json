@@ -11,7 +11,7 @@
     "id": "1",
     "title": "Contact",
     "description": "You can reach me ...",
-    "text": "The text...",
+    "text": "Here is my contact info...",
     "class": [],
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/0/07/Cubic_Structure_with_Shallow_Depth_of_Field.jpg"
   },
@@ -20,7 +20,7 @@
     "title": "Fishy Clicky - a Unity game",
     "description": "Project Description",
     "text": "Text about the project...",
-    "class": ["Programming", "3D-graphics"],
+    "class": ["Games", "Programming"],
     "imageUrl": "https://liu.se/-/media/0-2018/02/tekfak-programbild-civilingenjor-medieteknik-jan2018.jpg?h=371&la=sv-SE&mw=639&w=639&hash=AE8892A0ACB19F907D2A079FC520FD9F20F52FE8"
   },
   {
@@ -45,7 +45,7 @@
     "title": "Automatic backing sound website",
     "description": "Project Description",
     "text": "Text about the project...",
-    "class": ["Programming", "Design"],
+    "class": ["Programming"],
     "imageUrl": "https://www.elegantthemes.com/blog/wp-content/uploads/2017/07/programming-languages-to-learn-for-wordpress-featured-image.png"
   },
   {
@@ -53,7 +53,7 @@
     "title": "3D-environment in Unreal Engine",
     "description": "Project Description",
     "text": "Text about the project...",
-    "class": ["3D-graphics", "Games"],
+    "class": ["3D-graphics", "Games", "Design"],
     "imageUrl": "https://www.scalevp.com/sites/default/files/designbig.jpg"
   },
   {
@@ -61,7 +61,7 @@
     "title": "2D-game in Unity",
     "description": "Project Description",
     "text": "Text about the project...",
-    "class": ["Games", "Programming"],
+    "class": ["Games", "Programming", "Design"],
     "imageUrl": "http://s3-eu-west-1.amazonaws.com/de-blog/uploads/2017/04/game-designer-how-to-developereconomics-660x458.png"
   },
   {
@@ -69,7 +69,7 @@
     "title": "Portfolio website",
     "description": "Project Description",
     "text": "Text about the project...",
-    "class": ["Design"],
+    "class": ["Design", "Programming"],
     "imageUrl": "https://i.udemycdn.com/course/750x422/271112_46db_7.jpg"
   },
   {
@@ -77,7 +77,7 @@
     "title": "3D-printed figure",
     "description": "Project Description",
     "text": "Text about the project...",
-    "class": ["Spel"],
+    "class": ["3D-graphics"],
     "imageUrl": "https://www.seamedu.com/wp-content/uploads/2019/07/game_designvsgame_development02.jpg"
   },
   {
@@ -85,7 +85,7 @@
     "title": "3D-model",
     "description": "Project Description",
     "text": "Text about the project...",
-    "class": ["Programming"],
+    "class": ["3D-graphics"],
     "imageUrl": "http://traininginchennai.in/3d-animation-training-images/game-design.jpg"
   },
   {
@@ -93,7 +93,7 @@
     "title": "Project Title",
     "description": "Project Description",
     "text": "Text about the project...",
-    "class": ["Design"],
+    "class": [],
     "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRtAYUZ8XgEwdtO0SGFZJnRNXLLkUZ7KVGOBoIGRgJbYVgHhlSv"
   },
   {
@@ -101,7 +101,7 @@
     "title": "Project Title",
     "description": "Project Description",
     "text": "Text about the project...",
-    "class": ["Spel"],
+    "class": [],
     "imageUrl": "https://www.hull.ac.uk/editor-assets/images/digital-media/ryan-connor-ba-game-and-entertainment-design.x1a038ec2.jpg"
   }
 

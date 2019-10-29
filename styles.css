@@ -1,7 +1,13 @@
 
 /*Small screens*/
 @media screen and (max-width: 600px) {
-
+  a {
+    text-decoration: none;
+  }
+  .backBtn {
+    padding-top: 3vw;
+    padding-bottom: 3vw;
+  }
   button:hover, button:active  {
     text-decoration: line-through;
   }
@@ -23,7 +29,7 @@
   }
   #projectCards {
     display: inline-grid;
-    grid-gap: 5px;
+    grid-gap: 5vw;
     grid-template-columns: 100%;
   }
   .projectCard {
@@ -62,8 +68,8 @@
     padding-top: 0px;
   }
   #main {
-    margin-top: 25vw;
-    margin-left: 0vw; /* Same as the height of the sidenav */
+    margin-top: 20vw;
+    margin-left: 0vw;
   }
   .projectDiv {
     margin-top: 5vw;
@@ -246,12 +252,18 @@ button {
 #menu {
   margin-top: 50px;
 }
-#portfolio {
+#portfolio a{
   font-family: inherit;
   color: grey;
 }
+#portfolio a:hover{
+  text-decoration: none;
+}
 #title {
   margin-bottom: 0px;
+}
+#title a:hover{
+  text-decoration: none;
 }
 .link:hover {
   cursor: pointer;
@@ -269,6 +281,7 @@ button {
 }
 .textDiv h1 {
   padding: 10px;
+  margin: 5px;
   color: white;
 }
 @keyframes slide-up {
