@@ -85,15 +85,15 @@ function appendData(category) {
       cardsToDisplay.push(portfolioData[i]);
     }
   }
-  //Display all projects
-  for(let l = 0; l < cardsToDisplay.length; l++){
+  //Display all projects starting w project added last
+  for(let l = (cardsToDisplay.length -1); l >= 0 ; l--){
     //Create div for image
     var cardDiv = document.createElement("div");
     cardDiv.classList.add("projectCard");
 
     //Create image
     var myImage = document.createElement("IMG");
-    myImage.src = cardsToDisplay[l].imageUrl;
+    myImage.src = cardsToDisplay[l].imageUrlThumbnail;
     myImage.classList.add("projectImage");
 
     //Create title

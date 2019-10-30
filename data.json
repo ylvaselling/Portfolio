@@ -2,10 +2,11 @@
   {
     "id": "0",
     "title": "About me",
-    "description": "I am an engineering student",
-    "text": "The text about me...",
+    "description": "",
+    "text": "Currently I am studying Master of Science in Media Technology and Engineering at Linköping University. In my free time I like to have some projects of my own, usually in 3D-graphics or programming. I have also been involved in the student organisations. Other big interests of mine are hiking, climbing and spending time with friends. :-)",
     "class": [],
-    "imageUrl": "https://static.techspot.com/images2/news/bigimage/2018/09/2018-09-07-image-17.jpg"
+    "imageUrlThumbnail": "img/about.jpg",
+    "imageUrl": "img/about.jpg"
   },
   {
     "id": "1",
@@ -13,96 +14,117 @@
     "description": "You can reach me ...",
     "text": "Here is my contact info...",
     "class": [],
+    "imageUrlThumbnail": "img/fishyclicky.jpg",
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/0/07/Cubic_Structure_with_Shallow_Depth_of_Field.jpg"
   },
   {
     "id": "2",
-    "title": "Fishy Clicky - a Unity game",
-    "description": "Project Description",
-    "text": "Text about the project...",
-    "class": ["Games", "Programming"],
-    "imageUrl": "https://liu.se/-/media/0-2018/02/tekfak-programbild-civilingenjor-medieteknik-jan2018.jpg?h=371&la=sv-SE&mw=639&w=639&hash=AE8892A0ACB19F907D2A079FC520FD9F20F52FE8"
+    "title": "2D puzzle game in Unity",
+    "description": "In this game the user plays a hero that is going to resque a dragon from an evil princess.",
+    "text": "The game was made with Unity and C# and the design was made in illustrator.",
+    "class": ["Games", "Programming", "Design"],
+    "imageUrlThumbnail": "img/2Dgamethumbnail2.jpg",
+    "imageUrl": "img/2Dgame.png"
   },
   {
     "id": "3",
     "title": "Lego database website",
-    "description": "Project Description",
-    "text": "Text about the project...",
+    "description": "This website was created in an introductory course of web programming. The website has access to a database of Lego pieces and allows the user to display the data in various ways.",
+    "text": "The website was programmed in HTML, CSS, Javascript and MySQL.",
     "class": ["Programming", "Design"],
-    "imageUrl": "https://gratisiskolan.se/pub/media/nwt/blog/item/image/g/r/gris_programmering746x453.jpg"
+    "imageUrlThumbnail": "img/legothumb.png",
+    "imageUrl": "img/lego.png"
 
   },
   {
     "id": "4",
-    "title": "Monte Carlo Raytracer",
-    "description": "Project Description",
-    "text": "Text about the project...",
-    "class": ["Programming", "3D-graphics"],
-    "imageUrl": "https://cdn-images-1.medium.com/max/2600/1*jMDG7pTIaVeP5bQnE1RuXg.png"
+    "title": "Fishy Clicky - a Unity game",
+    "description": "Fishy Clicky is a simple mobile game which was developed in a course with focus of UX. During the development the game was user tested multiple times to maximize the usability.",
+    "text": "The game was developed in Unity and C# and the design was made in Illustrator and Photoshop. The aim of the game is to click the fish as fast as possible to make it explode.",
+    "class": ["Games", "Programming"],
+    "imageUrlThumbnail": "img/fishythumbnail.jpg",
+    "imageUrl": "img/fishyclicky.jpg"
+
   },
   {
     "id": "5",
-    "title": "Automatic backing sound website",
-    "description": "Project Description",
-    "text": "Text about the project...",
-    "class": ["Programming"],
-    "imageUrl": "https://www.elegantthemes.com/blog/wp-content/uploads/2017/07/programming-languages-to-learn-for-wordpress-featured-image.png"
+    "title": "3D-model",
+    "description": "This 3D-model was modelled and animated in Blender.",
+    "text": "The model has a walking cycle and an idle cycle.",
+    "class": ["3D-graphics"],
+    "imageUrlThumbnail": "img/animation.png",
+    "imageUrl": "img/animationheader.png"
   },
   {
     "id": "6",
-    "title": "3D-environment in Unreal Engine",
-    "description": "Project Description",
-    "text": "Text about the project...",
-    "class": ["3D-graphics", "Games", "Design"],
-    "imageUrl": "https://www.scalevp.com/sites/default/files/designbig.jpg"
+    "title": "3D-printed figure",
+    "description": "This figure was modelled in Blender and then printed in a 3D-printer.",
+    "text": "The modelling was an attempt to learn the sculpt mode in Blender.",
+    "class": ["3D-graphics"],
+    "imageUrlThumbnail": "img/3Dmodel.jpg",
+    "imageUrl": "img/3Dmodel.jpg"
   },
   {
     "id": "7",
-    "title": "2D-game in Unity",
-    "description": "Project Description",
-    "text": "Text about the project...",
-    "class": ["Games", "Programming", "Design"],
-    "imageUrl": "http://s3-eu-west-1.amazonaws.com/de-blog/uploads/2017/04/game-designer-how-to-developereconomics-660x458.png"
+    "title": "Automatic backing sound website",
+    "description": "This website uses the computer's microphone and detects pitch. The website then plays backing music that harmonizes with that pitch.",
+    "text": "This project was created in a course of sound physics and the algorithm makes use of Fourier transform to detect the pitches in the incoming sound. Furthermore, another algorithm is used to detect the keynote. After that, the program chooses between four different chords to play from.",
+    "class": ["Programming"],
+    "imageUrlThumbnail": "img/ljudthumb.png",
+    "imageUrl": "img/ljud.png"
   },
   {
     "id": "8",
-    "title": "Portfolio website",
-    "description": "Project Description",
-    "text": "Text about the project...",
-    "class": ["Design", "Programming"],
-    "imageUrl": "https://i.udemycdn.com/course/750x422/271112_46db_7.jpg"
+    "title": "3D-environment in Unreal Engine",
+    "description": "This 3D-environment features an floating island where the sun sets and rises and soothing music is played. During the night there are countless starts and one can always open a cold beer.",
+    "text": "This project was developed in Unreal Engine for a course in 3D-graphics. The sky was programmed from an image where one column of the image was projected onto a sphere that the sky consisted of. The column changed with time to create the effect of the changing sky. The tree, beer and island was modeled in Blender and the ground and grass was modeled in Unreal Engine and animated there as well, along with the leaves.",
+    "class": ["3D-graphics", "Games", "Design"],
+    "imageUrlThumbnail": "img/island.png",
+    "imageUrl": "img/malseyheader.jpg"
   },
   {
     "id": "9",
-    "title": "3D-printed figure",
-    "description": "Project Description",
-    "text": "Text about the project...",
-    "class": ["3D-graphics"],
-    "imageUrl": "https://www.seamedu.com/wp-content/uploads/2019/07/game_designvsgame_development02.jpg"
+    "title": "Portfolio website",
+    "description": "The portfolio website features minimalistic design and is responsive.",
+    "text": "The website is written in HTML, CSS and javascript. The idea of the program structure was that it should be easy to add new projects and categories. Therefore all data is read from a json-file. The website doesn't have to be reloaded any point - all content is dynamically appended to the DOM in javascript. Furthermore, the website is completely responsive and offers a different layout for smaller screens.",
+    "class": ["Design", "Programming"],
+    "imageUrlThumbnail": "img/portfoliothumb.png",
+    "imageUrl": "img/portfolioheader.png"
   },
   {
     "id": "10",
-    "title": "3D-model",
-    "description": "Project Description",
-    "text": "Text about the project...",
-    "class": ["3D-graphics"],
-    "imageUrl": "http://traininginchennai.in/3d-animation-training-images/game-design.jpg"
+    "title": "Physics simulation of clockwork",
+    "description": "This physics simulation makes use of numerical solutions in order to approximate physical equations.",
+    "text": "The numerical solution used was the Euler method and the project was develope in a course of modelling and simulation. The clockwork uses physical equations for pendulums, as well as for moments of inertia for the cogs. When the weight that is driving the clockwork reaches the floor the clock stops - just as a real clock would.",
+    "class": ["Programming", "3D-graphics", "Simulation"],
+    "imageUrlThumbnail": "img/mosthumb.jpg",
+    "imageUrl": "img/mos.jpg"
   },
   {
     "id": "11",
-    "title": "Project Title",
-    "description": "Project Description",
-    "text": "Text about the project...",
-    "class": [],
-    "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRtAYUZ8XgEwdtO0SGFZJnRNXLLkUZ7KVGOBoIGRgJbYVgHhlSv"
+    "title": "Multiplayer mobile game for dome theater",
+    "description": "Add text",
+    "text": "add text",
+    "class": ["Programming", "3D-graphics", "Games"],
+    "imageUrlThumbnail": "img/Domegame.jpg",
+    "imageUrl": "img/Domegame.jpg"
   },
   {
     "id": "12",
-    "title": "Project Title",
-    "description": "Project Description",
-    "text": "Text about the project...",
-    "class": [],
-    "imageUrl": "https://www.hull.ac.uk/editor-assets/images/digital-media/ryan-connor-ba-game-and-entertainment-design.x1a038ec2.jpg"
+    "title": "Monte Carlo Raytracer",
+    "description": "This raytracer is written in C++ and supports Whitted and Monte Carlo raytracing. The raytraces supports diffuse, specular and transparent surfaces.",
+    "text": "Rays are shot from the eye through a pixel in the camera plane and then the ray bounce around in the scene until it is terminated. The Monte Carlo raytracer makes use of a probability based method, the Monte Carlo method, to solve the rendering equation. The Monte Carlo method is used to simulate soft indirect light. Furthermore, Whitted raytracing is used to simulate transparent and specular surfaces. To reduce noise, supersampling and anti-aliasing was used. To minimise artefacts, a rays are terminated on a random basis which is called 'Russian roulette'.",
+    "class": ["Programming", "3D-graphics", "Simulation"],
+    "imageUrlThumbnail": "img/raytracer.bmp",
+    "imageUrl": "img/raytracer.bmp"
+  },
+  {
+    "id": "13",
+    "title": "Drone defense system for airports",
+    "description": "During the summer 2019 I was a project manager at SAAB for a project that developed a defense system for airports for intruding drones.",
+    "text": "The role consisted of leading a team of 15 summer interns through a process of developing a concept and implementing the system. The system consisted of a few subsystems: an image processing unit, a graphical user interface, a navigation system for the drone and a mechanical system for the defense mechanism.",
+    "class": ["Programming"],
+    "imageUrlThumbnail": "img/dronethumb.jpg",
+    "imageUrl": "img/drone.jpg"
   }
-
 ]
