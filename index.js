@@ -78,8 +78,8 @@ function appendData(category) {
   mainContainer.appendChild(projectCards);
 
   //Get all projects to display
-  //0 & 1 is reserved for about and contact info
-  for (var i = 2; i < portfolioData.length; i++) {
+  //0 is reserved for about section
+  for (var i = 1; i < portfolioData.length; i++) {
     if(portfolioData[i].class.includes(category) ||
       category == "all") {
       cardsToDisplay.push(portfolioData[i]);
