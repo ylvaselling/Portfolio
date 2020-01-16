@@ -115,7 +115,43 @@
     "description": "The raytracer simulates light in a room with diffuse, specular and transparent objects.",
     "text": "This raytracer was written in C++ and supports Whitted and Monte Carlo raytracing, as well as diffuse, specular and transparent surfaces. Rays are shot from the eye through a pixel in the camera plane and then the ray bounce around in the scene until it is terminated. The Monte Carlo raytracer makes use of a probability based method, the Monte Carlo method, to solve the rendering equation. The Monte Carlo method is used to simulate soft indirect light. Furthermore, Whitted raytracing is used to simulate transparent and specular surfaces. To reduce noise, supersampling and anti-aliasing was used. To minimise artefacts, a rays are terminated on a random basis which is called 'Russian roulette'.",
     "class": ["Programming", "3D-graphics", "Simulation"],
-    "imageUrlThumbnail": "img/raytracer.jpg",
-    "imageUrl": "img/raytracer.jpg"
+    "imageUrlThumbnail": "img/raytracer.png",
+    "imageUrl": "img/raytracer.png"
+  },
+  {
+    "id": "13",
+    "title": "Citrus shader",
+    "description": "This shader is written in OSL and simulates a citrus peel and flesh.",
+    "text": "In order to achive the cloves in the flesh, a sinus function was used. The images are rendered in 3DsMax.",
+    "class": ["Programming", "3D-graphics"],
+    "imageUrlThumbnail": "img/orangespreview.jpeg",
+    "imageUrl": "img/orangesheader.jpeg"
+  },
+  {
+    "id": "14",
+    "title": "Terragen mountain",
+    "description": "This mountain was generetad in Terragen.",
+    "text": "",
+    "class": ["3D-graphics"],
+    "imageUrlThumbnail": "img/terragen.jpeg",
+    "imageUrl": "img/terragen.jpeg"
+  },
+  {
+    "id": "15",
+    "title": "React Native app with wishlist and carousel",
+    "description": "This app was created in React Native and features a minimal SDK.",
+    "text": "The app features two components, a carousel and a wishlist. These can be used independently of each other. The user can specify how many items the carousel should contain and if carousel should feature a star button or not.",
+    "class": ["Programming","Design"],
+    "imageUrlThumbnail": "img/reactapp.png",
+    "imageUrl": "img/reactapp.png"
+  },
+  {
+    "id": "16",
+    "title": "Procedurally generated romanesco broccoli",
+    "description": "This plugin was written in python and generates a romanesco broccoli object.",
+    "text": "The python plugin samples a logarithmic spiral, often called the 'golden spiral', and creates cones that are placed on this spiral. The cones are scaled accordingly and then placed on the surface of a larger base cone with matrix transformations. This creation of cones is iterated two times to generate this image.",
+    "class": ["Programming","3D-graphics"],
+    "imageUrlThumbnail": "img/romanescopreview.png",
+    "imageUrl": "img/romanescoheader.png"
   }
 ]
