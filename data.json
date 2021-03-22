@@ -153,5 +153,42 @@
     "class": ["Programming","3D-graphics"],
     "imageUrlThumbnail": "img/romanescopreview.png",
     "imageUrl": "img/romanescoheader.png"
+  },
+  {
+    "id": "17",
+    "title": "GPU accelerated ray tracer",
+    "description": "In this project, CUDA was used to parallelize ray tracing.",
+    "text": "In a way to create better performance than the previous ray tracer, CUDA was used for GPU acceleration. The focus of the project was to make the ray tracer fast and perform in real time, a goal which was achieved as the image above uses 2048 samples per pixels, and the user can move around in the scene in real time. The ray tracer itself is simple and only uses only perfectly diffuse materials and a few bounces before the ray is terminated.",
+    "class": ["Programming","3D-graphics", "Simulation"],
+    "imageUrlThumbnail": "img/cudaraytracer.jpg",
+    "imageUrl": "img/cudaraytracer_large.png"
+  },
+  {
+    "id": "18",
+    "title": "Computer vision tracking project",
+    "description": "In this project, computer vision techniques was used to track humans on surveillance cameras.",
+    "text": "This program was written in C++ to enable real time tracking, and OpenCV was used as a library. To determine foreground and background we used a Gaussian Mixture Model. A simple implementation of occlusion management which was based on the motion vectors of the objects was also implemented.",
+    "class": ["Programming"],
+    "imageUrlThumbnail": "img/trackingproject_small.png",
+    "imageUrl": "img/trackingproject.png"
+  },
+  {
+    "id": "19",
+    "title": "Computer vision 3D-reconstruction project",
+    "description": "In this project, computer vision techniques was used reconstruct a 3D model from a collection of photographs.",
+    "text": "This program was written in python with the use of OpenCV-function solvePnPRansac. The camera's relative poses were determined with PNP and RANSAC. After each image had been added, a bundle adjustment was carried out to minimize errors. The  normals of each sample point were calculated depending on its neighbours and the model was visualized with Screened Poisson Surface Reconstruction.",
+    "class": ["Programming"],
+    "imageUrlThumbnail": "img/3Drecon.jpg",
+    "imageUrl": "img/3Drecon.jpg"
+  },
+  {
+    "id": "20",
+    "title": "LiU Game Awards 2020 Winner Game",
+    "description": "The game is called Get Wrecked Insect! and uses face tracking and augmented reality for the gameplay.",
+    "text": "The player plays a chameleon which eats insects by opening his/her mouth to launch the chameleon tongue. A Boid simulation was used for the insect movements. The gameplay is to eat the right combination of insects sufficiently fast. The game was developed in Unity for iOS and utilizes the augmented reality kit called ARKit. It uses the depth camera and Apple A12X chip for neural networks that was launched for iPad Pro and iPhone X which enables robust face tracking in real time. ",
+    "class": ["Programming", "Design", "3D-graphics", "Simulation"],
+    "imageUrlThumbnail": "img/getwrecked_tall.png",
+    "imageUrl": "img/getwrecked_wide.png",
+    "videoUrl": "https://www.youtube.com/embed/Nt-Oh2yAy3s"
   }
 ]

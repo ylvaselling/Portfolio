@@ -105,7 +105,9 @@
   button {
     font-size: 5vw;
   }
-
+  iframe {
+    width: 100%;
+  }
 }
 
 /*Medium to large screens*/
@@ -223,7 +225,10 @@
   }
 }
 
-
+iframe {
+  display: block;
+  margin: 0 auto;
+}
 ul {
   padding-left: 3vw;
   list-style-type: none;

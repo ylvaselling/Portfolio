@@ -58,12 +58,26 @@ function displayProject(id) {
   //Create text about project
   var text = document.createTextNode(portfolioData[id].text);
   var contenttext = document.createElement('p');
+  
   contenttext.appendChild(text);
-
   projectDiv.appendChild(imageDiv);
   projectDiv.appendChild(title);
   projectDiv.appendChild(description);
   projectDiv.appendChild(contenttext);
+  // Create video, if there is one
+  if("videoUrl" in portfolioData[id]) {
+    var iframe = document.createElement('iframe');
+    iframe.src = portfolioData[id].videoUrl;
+    iframe.width=560;
+    iframe.height=315;
+    iframe.title="YouTube video player";
+    iframe.frameborder=0;
+    iframe.allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture";
+    iframe.allowfullscreen;
+
+    projectDiv.appendChild(iframe);
+  }
+
 }
 
 //Write out the data
